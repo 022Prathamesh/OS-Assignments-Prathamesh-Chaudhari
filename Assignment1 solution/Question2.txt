@@ -1,0 +1,149 @@
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ touch data.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat >> data.txt
+line1
+lin2
+line3
+line4
+line5
+line6
+line7
+line8
+line9
+line10
+line11
+line12
+line13
+line14
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ head data.txt
+line1
+lin2
+line3
+line4
+line5
+line6
+line7
+line8
+line9
+line10
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ tail -5 data.txt
+line11
+line12
+line13
+line14
+line15prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ mkdir numbers.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat >> numbers.txt
+-bash: numbers.txt: Is a directory
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ rmdir numbers.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ touch numbers.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat >> numbers.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1
+12
+13
+14
+15
+16
+17
+18
+19
+20
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ head numbers.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ head -15 numbers.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1
+12
+13
+14
+15
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ tail -3 numbers.txt
+18
+19
+20
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ touch input.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat >> input.txt
+THIS IS ALL UPPER CASEprathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat input.txt
+THIS IS ALL UPPER CASEprathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat >> input.txt
+this is all lower case
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat input.txt | tr [a-z] [A-Z]
+THIS IS ALL UPPER CASETHIS IS ALL LOWER CASE
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cp input.txt output.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat output.txt
+THIS IS ALL UPPER CASEthis is all lower case
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ tr [a-z] [A-Z] output.txt
+tr: extra operand ‘output.txt’
+Try 'tr --help' for more information.
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ tr '[:lower:]' '[:upper:]' input.txt output.txt
+tr: extra operand ‘input.txt’
+Try 'tr --help' for more information.
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ tr '[:lower:]' '[:upper:]' <input.txt> output.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat output
+cat: output: No such file or directory
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat output.txt
+THIS IS ALL UPPER CASETHIS IS ALL LOWER CASE
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ touch duplicate.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat duplicate.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat >> duplicate.txt
+This will be unique. this is not unique.this is unique.I love Formula1
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat >> duplicate.txt
+SEB is my favorite
+SEB is my favorite
+SEB is my favorite
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat duplicate.txt
+This will be unique. this is not unique.this is unique.I love Formula1
+SEB is my favorite
+SEB is my favorite
+SEB is my favorite
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ uniq duplicate.txt
+This will be unique. this is not unique.this is unique.I love Formula1
+SEB is my favorite
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ sort duplicate.txt | uniq
+SEB is my favorite
+This will be unique. this is not unique.this is unique.I love Formula1
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ touch fruits.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cat >> fruits.txt
+Apple
+banana
+kiwi
+dragon fruit
+apple
+APPLE
+Apple
+kiwi
+strawberry
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ sort fruits.txt | uniq -c
+      1 APPLE
+      2 Apple
+      1 apple
+      1 banana
+      1 dragon fruit
+      2 kiwi
+      1 strawberry
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$
