@@ -1,0 +1,157 @@
+prathamesh_chaudhari@Prathamesh:~$ vi Q1.sh
+prathamesh_chaudhari@Prathamesh:~$ cd LinuxAssignment
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q1.sh
+-bash: ./Q1.sh: No such file or directory
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ls
+Ass2PartC  Q3.sh  Q5.sh  Q7.sh  Q9.sh     docs      duplicate.txt  fruits.txt  newdir       output.txt
+Q2.sh      Q4.sh  Q6.sh  Q8.sh  data.txt  docs.zip  file1.txt      input.txt   numbers.txt
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ cd Ass2PartC
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment/Ass2PartC$ ./Q1.sh
+Hello World!
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment/Ass2PartC$ ./Q2.sh
+-bash: ./Q2.sh: No such file or directory
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment/Ass2PartC$ cat Q2.sh
+cat: Q2.sh: No such file or directory
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment/Ass2PartC$ cd ..
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q2.sh
+CDAC Mumbai
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q3.sh
+Enter number
+5
+5
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q4.sh
+enter num 1
+6
+enter num 2
+5
+11
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q5.sh
+Enter a number
+5
+5 is Odd
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q6.sh
+numbers 1 to 5
+1
+2
+3
+4
+5
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q7.sh
+1
+2
+3
+4
+5
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q8.sh
+File does not exist
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q9.sh
+Enter a number
+8
+not greate than 10
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ vi Q10.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ chmod +x Q10.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q10.sh
+Enter ur number
+5
+./Q10.sh: line 9: syntax error near unexpected token `('
+./Q10.sh: line 9: `     n = $ ((i*n1))'
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ vi Q10.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q10.sh
+Enter a number:
+5
+1 2 3 4 5 prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ vi Q10.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q10.sh
+Enter a number:
+5
+1 1
+2
+3
+4
+5
+2 2
+4
+6
+8
+10
+3 3
+6
+9
+12
+15
+4 4
+8
+12
+16
+20
+5 5
+10
+15
+20
+25
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ vi Q10.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q10.sh
+Enter a number:
+5
+1 i X j = 1
+i X j = 2
+i X j = 3
+i X j = 4
+i X j = 5
+2 i X j = 2
+i X j = 4
+i X j = 6
+i X j = 8
+i X j = 10
+3 i X j = 3
+i X j = 6
+i X j = 9
+i X j = 12
+i X j = 15
+4 i X j = 4
+i X j = 8
+i X j = 12
+i X j = 16
+i X j = 20
+5 i X j = 5
+i X j = 10
+i X j = 15
+i X j = 20
+i X j = 25
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ vi Q10.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q10.sh
+ enter ur number
+5
+ 5 x 1 = 5
+ 5 x 2 = 10
+ 5 x 3 = 15
+ 5 x 4 = 20
+ 5 x 5 = 25
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ vi Q11.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q11.sh
+-bash: ./Q11.sh: Permission denied
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ chmod +x Q11.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q11.sh
+Enter a number (enter a negative number to exit):
+-3
+./Q11.sh: line 8: ((: n<: syntax error: operand expected (error token is "<")
+Square of -3 is: 9
+./Q11.sh: line 8: ((: n<: syntax error: operand expected (error token is "<")
+Square of  is: 0
+./Q11.sh: line 8: ((: n<: syntax error: operand expected (error token is "<")
+Square of  is: 0
+./Q11.sh: line 8: ((: n<: syntax error: operand expected (error token is "<")
+Square of  is: 0
+./Q11.sh: line 8: ((: n<: syntax error: operand expected (error token is "<")
+Square of  is: 0
+./Q11.sh: line 8: ((: n<: syntax error: operand expected (error token is "<")
+Square of  is: 0
+./Q11.sh: line 8: ((: n<: syntax error: operand expected (error token is "<")
+Square of  is: 0
+^C
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ vi Q11.sh
+prathamesh_chaudhari@Prathamesh:~/LinuxAssignment$ ./Q11.sh
+Enter a number (enter a negative number to exit):
+5
+Square of 5 is: 25
+-3
+Square of -3 is: 9

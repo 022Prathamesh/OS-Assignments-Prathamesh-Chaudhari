@@ -1,0 +1,30 @@
+PART A
+
+1) prints "Hello,World!"
+2)this line of code assigns the value "Productive" to the variable named name
+3)creates a file named file.txt
+4)ls -a lists all files and directories in the current directory, including hidden
+5)removes file.txt
+6) copies file1.txt to file2.txt
+7) moves the file file.txt /path/to/directory/ 
+8)to provide permissions to script.sh
+9)to search for word "pattern"  in file.txt
+10)mkdir mydir:Creates a new directory named "mydir".;
+&&: This is a command chaining operator that allows you to execute multiple commands sequentially, only if the preceding command succeeds.
+cd mydir: Changes the current directory to "mydir".
+&&: Another command chaining operator.
+touch file.txt: Creates a new file named "file.txt" inside the "mydir" directory.
+&&: Another command chaining operator.
+echo "Hello, World!" > file.txt: Writes the text "Hello, World!" into the "file.txt" file.
+&&: Another command chaining operator.
+cat file.txt: Displays the contents of the "file.txt" file, which should output "Hello, World!" as written in the previous step.
+
+11) ls -l : this command lists the contents ;grep to only display lines containing ".txt"
+12)"pattern" in all files within the specified directory (/path/to/directory/)
+13) cat file1.txt file2.txt | sort | uniq –d : command concatenates the contents of two files (file1.txt and file2.txt), sorts the combined content, and then filters out duplicate adjacent lines, displaying only the unique lines that appear in both files
+14)chmod 644 file.txt : This command sets the permissions of the file named "file.txt" to read and write for the owner, and read-only for group members and others
+15) cp -r source_directory destination_directory : This command copies the contents of the source directory (source_directory) recursively to the destination directory (destination_directory), preserving the directory structure.
+16) find /path/to/search -name "*.txt" :This command searches for files with the ".txt" extension within the specified directory (/path/to/search) and its subdirectories. 
+17)chmod u+x file.txt :This command adds executable permission for the owner (user) to the file named "file.txt".
+18)echo $PATH :
+This command prints the value of the PATH environment variable, which contains a list of directories where executable files are located
